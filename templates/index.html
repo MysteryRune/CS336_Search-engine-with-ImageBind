@@ -6,13 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ImageBind Search</title>
 </head>
+
 <body>
     <h1>File Uploader</h1>
+    
     <form action="/upload" method="post" enctype="multipart/form-data">
         <label for="file">Choose a file:</label>
-        <input type="file" name="file" id="file" accept=".txt, .pdf, .png, .jpg, .jpeg, .gif, .mp4, .mp3" required>
+        <input type="file" name="file" id="file" accept=".png, .jpg, .jpeg, .mp4, .mp3" required>
         <br>
-        <input type="submit" value="Upload">
+        <input type="submit" value="Upload File">
+    </form>
+
+    <br>
+
+    <form action="/upload_text" method="post">
+        <label for="text">Enter text:</label>
+        <textarea name="text" id="text" rows="4" cols="50" required></textarea>
+        <br>
+        <input type="submit" value="Submit Text">
     </form>
 </body>
+
 </html>

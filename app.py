@@ -31,6 +31,17 @@ def upload_file():
         filename = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
         file.save(filename)
         return redirect(url_for('index'))
+    
+# Route to handle text submissions
+@app.route('/upload_text', methods=['POST'])
+def upload_text():
+    text = request.form['text']
+
+    if text:
+        filename = os.path.join(app.config['UPLOAD_FOLDER'], 'text_submission.txt')
+        with open(filename, 'w') as file:
+            file.write(text)
+        return redirect(url_for('index'))
 
 # Run the application
 if __name__ == '__main__':
