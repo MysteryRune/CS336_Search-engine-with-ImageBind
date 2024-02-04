@@ -68,7 +68,7 @@
                 var reader = new FileReader();
                 // Đọc và update
                 reader.onload = function (e) {
-                    pictureReview.innerHTML = '<img src="' + e.target.result + '" alt=""> <button id="submitBtn-R" class="btn-submit mt-3" >Submit</button>';
+                    pictureReview.innerHTML = '<img src="' + e.target.result + '" alt=""> <a id="submitBtn-R" class="btn-submit mt-3" href="./retrieval.html" >Submit</a>';
                     submitButton.removeAttribute('disabled');
                 };
                 // Đọc dữ liệu từ file được chọn

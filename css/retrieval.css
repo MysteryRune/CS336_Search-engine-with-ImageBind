@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+  
+html {
+    scroll-behavior: smooth;
+    line-height: 1.5;
+    font-size: 62.5%;
+}
+
+.container {
+    background-image: url(../img/Background.svg);
+    height: 700px;
+}
+
+/* header */
+.header h3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-weight: 700;
+}
+
+.nav a {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: underline !important;
+    font-weight: 700;
+}
+
+.title p {
+    font-size: 40px;
+    font-weight: 700;
+}
