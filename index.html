@@ -76,22 +76,32 @@
             }
         }
 
+        function updatePreviewFromUrl() {
+            var urlInput = document.getElementById('url-input');
+            var pictureReview = document.getElementById('pictureReview');
+            var submitButton = document.querySelector('.btn-submit');
+            var mainContent = document.querySelector('.main-content');
+
+            // Kiểm tra nếu URL hợp lệ
+            if (isValidImageUrl(urlInput.value)) {
+                // Hiển thị ảnh và button Submit
+                pictureReview.innerHTML = '<img src="' + urlInput.value + '" alt=""> <a id="submitBtn-R" class="btn-submit mt-3" href="./retrieval.html" >Submit</a>';
+                submitButton.removeAttribute('disabled');
+            } else {
+                // Nếu URL không hợp lệ, ẩn ảnh và vô hiệu hóa button Submit
+                pictureReview.innerHTML = '';
+                submitButton.setAttribute('disabled', 'true');
+            }
+        }
+
+        function isValidImageUrl(url) {
+            return url.trim() !== '';
+        }
         document.querySelector('.btn-submit').addEventListener('click', function () {
             document.querySelector('.main-content').classList.add('d-none');
             document.querySelector('.picture-review').classList.remove('d-none');
             document.querySelector('.picture-review').classList.add('d-block');
         });
-
-        // function updatePreviewFromUrl() {
-        //     var urlInput = document.getElementById('url-input');
-        //     var pictureReview = document.getElementById('pictureReview');
-
-        //     var imageUrl = urlInput.value;
-
-        //     if (imageUrl) {
-        //         pictureReview.innerHTML = '<img src="' + imageUrl + '" alt="">';
-        //     }
-        // }
     </script>
 </body>
 </html>
