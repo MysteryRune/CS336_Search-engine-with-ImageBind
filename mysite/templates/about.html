@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature search</title>
+    <!-- BS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    {% comment %} <link rel="stylesheet" href="./css/about.css"> {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="header d-flex justify-content-between mx-4 pt-4">
+            <h3>CS336 - Multimedia Information Retrieval</h3>
+            <div class="nav">
+                <a href="../home" class="me-5">Home</a>
+                <a href="" class="active">About</a>
+            </div>
+        </div>
+        <div class="title text-center mt-5">
+            <p>Natural Search</p>
+        </div>
+        <div class="content text-center">
+            <p>This web page is a research prototype</p>
+            <p>This web page provide <b>Images</b> which useful in <b>Natural science</b> and <br> <b>Education</b></p>
+            <br>
+            <p>Feel free to contact for more information</p>
+            <i class="fa-brands fa-github"></i>
+        </div>
+    </div>
+</body>
+</html>
