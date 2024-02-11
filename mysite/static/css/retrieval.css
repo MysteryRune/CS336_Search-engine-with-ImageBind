@@ -11,11 +11,6 @@ html {
     font-size: 62.5%;
 }
 
-.container {
-    background-image: url(../img/Background.svg);
-    height: 700px;
-}
-
 /* header */
 .header h3 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 

@@ -23,18 +23,18 @@
     />
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
 </head>
 <body>
-    <div class="container">
+    <div>
         <div class="header d-flex justify-content-between mx-4 pt-4">
             <h3>CS336 - Multimedia Information Retrieval</h3>
             <div class="nav">
                 <a href="../home" class="me-5 active">Home</a>
-                <!-- <a href="./about.html">About</a> -->
                 <a href="../about">About</a>
             </div>
         </div>
-        <div class="title text-center mt-5">
+        <div class="linear-wipe">
             <p>Natural Search</p>
         </div>
         <div class="main-content d-flex flex-column">
@@ -51,7 +51,6 @@
                 <div class="button_file_upload">
                     <input type="file" id="fileUpload" name="query_img" accept=".png, .jpg, .jpeg" onchange="updatePreview()">
                     <label for="fileUpload" class="d-flex btn-function align-items-center justify-content-center flex-column">
-                        {% comment %} <img src="./img/upload.svg" alt="upload" class="upload-icon pt-3"> {% endcomment %}
                         <img src="{% static 'img/upload.svg' %}" alt="upload" class="upload-icon pt-3">
                         <p class="text-button pt-2">Upload from your computer</p>
                     </label>

@@ -15,11 +15,6 @@ body {
     background-image: url(../img/Background.svg);
 }
 
-/* .container {
-    background-image: url(../img/Background.svg);
-    height: 700px;
-} */
-
 /* header */
 .header h3 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
@@ -30,7 +25,7 @@ body {
     text-align: center;
     padding-top: 10%;
     padding-bottom: 0%;
-    font-size: xxx-large;
+    font-size: xx-large;
     font-weight: 750;
     /* border: 3px solid #73AD21; */
 }
@@ -89,12 +84,6 @@ body {
     }
 }
 
-.nav a {
-    font-size: 20px;
-    color: #000;
-    text-decoration: none;
-}
-
 .active {
     text-decoration: underline !important;
     font-weight: 700;
@@ -103,15 +92,6 @@ body {
 .title p {
     font-size: 80px;
     font-weight: 700;
-}
-
-/* content */
-.content {
-    width: 700px;
-    height: 250px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 25px;
-    border: 2px dashed #333;
 }
 
 #fileUpload {
