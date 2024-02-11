@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+  
+html {
+    scroll-behavior: smooth;
+    line-height: 1.5;
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(../img/Background.svg);
+}
+
+/* .container {
+    background-image: url(../img/Background.svg);
+    height: 700px;
+} */
+
+/* header */
+.header h3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-weight: 700;
+}
+
+.center-custome {
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 0%;
+    font-size: xxx-large;
+    font-weight: 750;
+    /* border: 3px solid #73AD21; */
+}
+
+.linear-wipe {
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+
+    /* border: 3px solid #73AD21; */
+
+    /* #51cb6e, 
+    #7cd892, 
+    #a8e5b7, 
+    #d3f2db, 
+    #d3f2db, 
+    #a8e5b7, 
+    #7cd892, 
+    #51cb6e, 
+    #7cd892 */
+    background: linear-gradient(
+        -45deg, 
+        #51CB6E, 
+        #FFC914, 
+        #5BC0EB, 
+        #654236, 
+        #654236, 
+        #5BC0EB, 
+        #FFC914, 
+        #51CB6E, 
+        #51CB6E);
+    background-size: 330%;
+    animation: linear-left-right 30s linear infinite;
+    /* height: 100vh; */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* background-image: url(../img/test.jpg); */
+    /* -webkit-background-clip: text; */
+    /* background-clip: text; */
+    /* text-fill-color: transparent; */
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes linear-left-right {
+    /* 0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    } */
+    to {
+        background-position: 287% center;
+    }
+}
+
+.nav a {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: underline !important;
+    font-weight: 700;
+}
+
+.title p {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+/* content */
+.content {
+    width: 700px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
+    border: 2px dashed #333;
+}
+
+#fileUpload {
+    display: none;
+}
+
+.url input {
+    width: 600px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.middle p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.line {
+    height: 1px;
+    width: 200px;
+    background-color: #ccc;
+    margin-top: 13px;
+}
+
+.btn-function {
+    width: 200px;
+    height: 60px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.border-button {
+    border: 2px solid #000; /* Black border with 2px width */
+    border-radius: 10px;
+    padding: 10px 20px; /* Add padding to make the button clickable */
+    background-color: transparent; /* Transparent background */
+    color: #000; /* Black text color */
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.border-button:hover {
+    background-color: #000; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+  }
+
+.btn-align {
+    display: flex;
+    justify-content: end;
+}
+
+.btn-submit {
+    background-color: #ccc; 
+    color: #ffffff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 20px; 
+    cursor: not-allowed; 
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    align-self: flex-end;
+    margin-right: 300px;
+}
+
+.btn-submit:enabled {
+    background-color: #00ff00; 
+    cursor: pointer; 
+}
+
+.picture-review img {
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    padding: 10px;
+    border: 2px dashed #333;
+}
+
+.picture-review a {
+    background-color: #00ff00; 
+    color: #ffffff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 20px; 
+    cursor: not-allowed; 
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    align-self: flex-end;
+    margin-right: 300px;
+    cursor: pointer;
+    text-decoration: none;
+}

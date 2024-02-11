@@ -5,7 +5,8 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index_welcome(request):
-    return HttpResponse("<h1>Welcome to Nature search!<h1> Click here to continue")
+    return render(request, "welcome_page.html")
+    # return HttpResponse("<h1>Welcome to Nature search!<h1> Click here to continue")
 
 def index_home(request):
     # t = loader.get_template("mysite/templates/index.html")

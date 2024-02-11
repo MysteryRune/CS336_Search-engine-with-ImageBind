@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature search</title>
+    <!-- BS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
+    {% comment %} <style>
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #23d5ab, #23a6d5, #e73c7e, #ee7752, #e73c7e);
+            background-size: 330%;
+            animation: gradient 10s linear infinite;
+            height: 100vh;
+            background-clip: text;
+        }
+        
+        @keyframes gradient {
+            to {
+                background-position: 287% center;
+            }
+        }
+    </style> {% endcomment %}
+</head>
+<body>
+    <div class="container">
+        <p class="center-custome">Welcome to</p>
+        <div class="linear-wipe">
+            <p>Natural Search</p>
+        </div>
+
+        {% comment %} class="me-5 active" {% endcomment %}
+        <div class="btn-align">
+            <a class="border-button" href="/home">Home page</a>
+        </div>
+    </div>
+</body>
+</html>
